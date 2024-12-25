@@ -1,0 +1,142 @@
+baseURL: "https://mingo-liu.github.io/"  
+# lang
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: false
+languages:
+  zh:
+    languageCode: zh-CN
+    weight: 1
+title: mingo 
+theme: "PaperMod"
+
+
+# 分类
+taxonomies:
+  # 标签
+  tag: tags
+  # 分类
+  category: categories
+  # 系列 
+  series: series
+
+menu:
+  main:
+    - identifier: home 
+      name: 首页 
+      url: /
+      weight: 1
+    - identifier: archives 
+      name: 归档 
+      url: /archives/
+      weight: 2 
+    - identifier: search 
+      name: 搜索 
+      url: /search/
+      weight: 3 
+    - identifier: tags 
+      name: 标签 
+      url:  /tags/ 
+      weight: 4 
+    - identifier: about 
+      name: 关于 
+      url:  /about/ 
+      weight: 5
+
+# 代码高亮中使用 css class 来指定样式
+# pygmentsUseClasses: true
+
+# 自动检测内容中的中文/日文/韩文，确保词数统计等功能正常
+# 详情见https://gohugo.io/getting-started/configuration/#hascjklanguage
+hasCJKLanguage: true
+
+# 启用 emoji，可以使用 :cry: 的语法显示 emoji
+# 详情见 https://gohugo.io/getting-started/configuration/#enableemoji
+enableEmoji: true
+
+# 主页中显示的文章数
+paginate: 5
+
+params:
+  languageAltTitle: Chinese 
+  # 日期格式化
+  DateFormat: "2006-01-02"
+
+  # 开启搜索 
+  enableSearch: true
+  enableArchives: true
+
+  # 深浅色主题切换
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  disableThemeToggle: false 
+
+  # 主界面样式
+  homeInfoParams:
+    Title:  "欢迎访问我的博客 👋"
+    Content: | 
+     这里是一个分享技术、生活和成长的地方。
+  socialIcons: # optional
+    - name: "Github"
+      url: "https://github.com/mingo-liu"
+    - name: "Email"
+      url: "mailto:isliuzm@foxmail.com"
+    # - name: "Zhihu"
+    #   url: "https://www.zhihu.com/people/wxf79b8d0db6c6562f"
+
+  ShowShareButtons: false 
+
+  # 设置文章目录
+  ShowToc: true
+  TocOpen: true 
+
+  # 显式字数统计
+  ShowWordCount: false 
+
+  # 阅读用时
+  ShowReadingTime: false 
+
+  # 面包屑导航
+  ShowBreadCrumbs: true  # Home > Posts > Post1
+
+  # 上/下一篇文章
+  ShowPostNavLinks: true
+
+  # 代码复制按钮
+  ShowCodeCopyButtons: true
+
+  # 评论按钮  
+  comments: true
+
+  # 与搜索相关
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+markup:
+  goldmark:
+    renderer:
+      # 允许在 md 中使用不安全的 HTML 标签
+      unsafe: true
+  # 代码高亮
+  highlight:
+    # 使用 css class 来指定代码高亮的样式
+    noClasses: false
+    # 启用代码高亮
+    codeFences: true
+    # 没有指定语言时猜测代码的语言并应用对应的高亮
+    guessSyntax: true
+    # 代码块显示行号
+    lineNos: true
+    # 代码高亮的样式主题
+    style: monokai

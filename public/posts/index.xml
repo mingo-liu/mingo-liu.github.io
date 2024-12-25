@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on mingo</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on mingo</description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 24 Dec 2024 17:12:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go基础语法</title>
+      <link>http://localhost:1313/posts/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Tue, 24 Dec 2024 17:12:47 +0800</pubDate>
+      <guid>http://localhost:1313/posts/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
+      <description>Golang基础语法介绍</description>
+    </item>
+    <item>
+      <title>第二篇文章</title>
+      <link>http://localhost:1313/posts/vim/</link>
+      <pubDate>Tue, 24 Dec 2024 16:52:21 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vim/</guid>
+      <description>本文主要介绍了vim的常见用法</description>
+    </item>
+    <item>
+      <title>我的第一篇博客</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>这是一个测试文件&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>
